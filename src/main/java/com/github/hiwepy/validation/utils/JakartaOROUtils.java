@@ -3,6 +3,7 @@ package com.github.hiwepy.validation.utils;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.oro.text.regex.MalformedPatternException;
 import org.apache.oro.text.regex.MatchResult;
 import org.apache.oro.text.regex.Pattern;
@@ -16,7 +17,9 @@ import org.apache.oro.text.regex.Util;
 import org.springframework.util.StringUtils;
 
 /**
+ *
  */
+@Slf4j
 public class JakartaOROUtils {
 
 	protected static ConcurrentMap<String, Pattern> COMPLIED_PATTERN = new ConcurrentHashMap<String, Pattern>();
@@ -35,11 +38,11 @@ public class JakartaOROUtils {
 	public static boolean matches(String regexp, int mask , String input) { 
 		try {
 			// 正规表达式模板
-			Pattern hardPattern = JakartaOROUtils.getPattern(regexp, mask);
+			Pattern hardPattern = getPattern(regexp, mask);
 			// 返回匹配结果
 			return matcher.matches(input, hardPattern);
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return false;
 		
@@ -50,7 +53,7 @@ public class JakartaOROUtils {
 			Pattern pattern = getPattern(regexp , mask); 
 			return matcher.matches(input, pattern);
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		} 
 		return false;
 	}
@@ -59,11 +62,11 @@ public class JakartaOROUtils {
 	public static boolean matchesPrefix(String regexp, int mask , String input) { 
 		try {
 			// 正规表达式模板
-			Pattern hardPattern = JakartaOROUtils.getPattern(regexp,mask);
+			Pattern hardPattern = getPattern(regexp,mask);
 			// 返回匹配结果
 			return matcher.matchesPrefix(input, hardPattern);
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return false;
 		
@@ -76,7 +79,7 @@ public class JakartaOROUtils {
 			// 返回匹配结果
 			return matcher.matchesPrefix(input, hardPattern);
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return false;
 	}
@@ -88,7 +91,7 @@ public class JakartaOROUtils {
 			// 返回匹配结果;只匹配一次
 			return matcher.contains(input, hardPattern);
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return false;
 		
@@ -105,7 +108,7 @@ public class JakartaOROUtils {
 			}
 			return math;
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return false;
 	}
@@ -122,7 +125,7 @@ public class JakartaOROUtils {
 				}
 			}
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return matchResult;
     }
@@ -150,7 +153,7 @@ public class JakartaOROUtils {
 				}
 			}
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
 		return matchResult;
 	}
@@ -167,7 +170,7 @@ public class JakartaOROUtils {
 		        output = Util.substitute(matcher, hardPattern, substiution, input, Util.SUBSTITUTE_ALL);
 			}
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
         return output;
     }
@@ -184,7 +187,7 @@ public class JakartaOROUtils {
 		        output = Util.substitute(matcher, hardPattern, substiution, input.toString(), Util.SUBSTITUTE_ALL);
 			}
 		} catch (MalformedPatternException e) {
-			e.printStackTrace();
+			log.error("matches error: {}", e.getMessage());
 		}
         return output;
 	}

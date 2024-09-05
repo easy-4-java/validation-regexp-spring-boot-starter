@@ -10,7 +10,8 @@ import javax.validation.Payload;
 
 import org.apache.oro.text.regex.Perl5Compiler;
 /**
- *  正则表达式注解，用于bean的字段或者参数，检查字段是否匹配正则
+ * 正则表达式注解，用于bean的字段或者参数，检查字段是否匹配正则
+ * @author hiwepy
  */
 @Target({ ElementType.FIELD,ElementType.PARAMETER})
 @Documented

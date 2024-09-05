@@ -14,7 +14,7 @@ public abstract class PatternMatchUtils {
 	
 	/**
 	 * 正则表达式验证方法:匹配表达式则返回true,不匹配则返回false
-	 * @param pattern the pattern to match against
+	 * @param regexp the pattern to match against
 	 * @param str the String to match
 	 * @return whether the String matches the given pattern
 	 */

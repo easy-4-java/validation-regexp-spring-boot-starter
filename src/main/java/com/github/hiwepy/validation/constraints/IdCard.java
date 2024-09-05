@@ -25,6 +25,9 @@ import javax.validation.Constraint;
 import com.github.hiwepy.validation.internal.constraintvalidators.IdCardValidator;
 
 
+/**
+ * @author hiwepy
+ */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = IdCardValidator.class)
