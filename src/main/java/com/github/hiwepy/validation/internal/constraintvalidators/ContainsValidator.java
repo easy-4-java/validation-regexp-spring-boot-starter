@@ -15,13 +15,11 @@
  */
 package com.github.hiwepy.validation.internal.constraintvalidators;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
-import org.springframework.util.StringUtils;
-
 import com.github.hiwepy.validation.constraints.Contains;
 import com.github.hiwepy.validation.utils.JakartaOROUtils;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+import org.springframework.util.StringUtils;
 
 
 public class ContainsValidator implements ConstraintValidator<Contains, String>{

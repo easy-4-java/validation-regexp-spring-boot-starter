@@ -15,14 +15,13 @@
  */
 package com.github.hiwepy.validation.constraints;
 
+import com.github.hiwepy.validation.internal.constraintvalidators.IdCardValidator;
+import jakarta.validation.Constraint;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import javax.validation.Constraint;
-
-import com.github.hiwepy.validation.internal.constraintvalidators.IdCardValidator;
 
 
 /**

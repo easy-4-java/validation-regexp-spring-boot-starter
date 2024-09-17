@@ -1,11 +1,11 @@
 package com.github.hiwepy.validation.utils;
 
+import org.springframework.util.StringUtils;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.springframework.util.StringUtils;
 
 
 public class JakartaRegexpUtils {

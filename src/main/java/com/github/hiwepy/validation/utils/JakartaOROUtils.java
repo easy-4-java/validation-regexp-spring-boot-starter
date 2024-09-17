@@ -1,20 +1,11 @@
 package com.github.hiwepy.validation.utils;
 
+import lombok.extern.slf4j.Slf4j;
+import org.apache.oro.text.regex.*;
+import org.springframework.util.StringUtils;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-
-import lombok.extern.slf4j.Slf4j;
-import org.apache.oro.text.regex.MalformedPatternException;
-import org.apache.oro.text.regex.MatchResult;
-import org.apache.oro.text.regex.Pattern;
-import org.apache.oro.text.regex.PatternCompiler;
-import org.apache.oro.text.regex.PatternMatcher;
-import org.apache.oro.text.regex.PatternMatcherInput;
-import org.apache.oro.text.regex.Perl5Compiler;
-import org.apache.oro.text.regex.Perl5Matcher;
-import org.apache.oro.text.regex.Perl5Substitution;
-import org.apache.oro.text.regex.Util;
-import org.springframework.util.StringUtils;
 
 /**
  *

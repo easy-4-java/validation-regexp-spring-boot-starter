@@ -1,14 +1,9 @@
 package com.github.hiwepy.validation.constraints;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
-import javax.validation.Payload;
-
+import jakarta.validation.Payload;
 import org.apache.oro.text.regex.Perl5Compiler;
+
+import java.lang.annotation.*;
 /**
  * 正则表达式注解，用于bean的字段或者参数，检查字段是否匹配正则
  * @author hiwepy

@@ -15,12 +15,11 @@
  */
 package com.github.hiwepy.validation.internal.constraintvalidators;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
 import com.github.hiwepy.validation.constraints.IdCard;
 import com.github.hiwepy.validation.utils.IDCardUtils;
 import com.github.hiwepy.validation.utils.IdcardUtils2;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class IdCardValidator implements ConstraintValidator<IdCard, String> {
 
