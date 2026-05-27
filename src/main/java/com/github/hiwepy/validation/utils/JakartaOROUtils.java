@@ -1,4 +1,4 @@
-package com.github.hiwepy.validation.utils;
+package io.github.hiwepy.validation.utils;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.oro.text.regex.*;

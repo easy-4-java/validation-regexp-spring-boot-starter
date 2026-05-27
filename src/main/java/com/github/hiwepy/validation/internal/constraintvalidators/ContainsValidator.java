@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.github.hiwepy.validation.internal.constraintvalidators;
+package io.github.hiwepy.validation.internal.constraintvalidators;
 
-import com.github.hiwepy.validation.constraints.Contains;
-import com.github.hiwepy.validation.utils.JakartaOROUtils;
+import io.github.hiwepy.validation.constraints.Contains;
+import io.github.hiwepy.validation.utils.JakartaOROUtils;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import org.springframework.util.StringUtils;
