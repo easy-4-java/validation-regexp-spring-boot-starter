@@ -1,4 +1,4 @@
-package com.github.hiwepy.validation.utils;
+package io.github.hiwepy.validation.utils;
 
 import org.springframework.util.StringUtils;
 
