@@ -1,4 +1,4 @@
-package com.github.hiwepy.validation;
+package io.github.hiwepy.validation;
 /*
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *

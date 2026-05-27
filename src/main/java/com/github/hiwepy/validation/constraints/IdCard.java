@@ -13,9 +13,9 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.github.hiwepy.validation.constraints;
+package io.github.hiwepy.validation.constraints;
 
-import com.github.hiwepy.validation.internal.constraintvalidators.IdCardValidator;
+import io.github.hiwepy.validation.internal.constraintvalidators.IdCardValidator;
 import jakarta.validation.Constraint;
 
 import java.lang.annotation.ElementType;
