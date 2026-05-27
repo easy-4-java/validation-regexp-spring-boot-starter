@@ -1,4 +1,4 @@
-package com.github.hiwepy.validation.constraints;
+package io.github.hiwepy.validation.constraints;
 
 import jakarta.validation.Payload;
 import org.apache.oro.text.regex.Perl5Compiler;
