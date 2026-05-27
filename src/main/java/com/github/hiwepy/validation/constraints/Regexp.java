@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.github.hiwepy.validation.constraints;
+package io.github.hiwepy.validation.constraints;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -25,7 +25,7 @@ import javax.validation.Payload;
 
 import org.apache.oro.text.regex.Perl5Compiler;
 
-import com.github.hiwepy.validation.internal.constraintvalidators.RegexpValidator;
+import io.github.hiwepy.validation.internal.constraintvalidators.RegexpValidator;
 
 /**
  * @author hiwepy

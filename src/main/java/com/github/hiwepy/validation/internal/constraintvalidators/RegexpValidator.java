@@ -13,15 +13,15 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.github.hiwepy.validation.internal.constraintvalidators;
+package io.github.hiwepy.validation.internal.constraintvalidators;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.util.StringUtils;
 
-import com.github.hiwepy.validation.constraints.Regexp;
-import com.github.hiwepy.validation.utils.JakartaOROUtils;
+import io.github.hiwepy.validation.constraints.Regexp;
+import io.github.hiwepy.validation.utils.JakartaOROUtils;
 
 
 public class RegexpValidator implements ConstraintValidator<Regexp, String>{

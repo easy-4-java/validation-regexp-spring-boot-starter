@@ -1,4 +1,4 @@
-package com.github.hiwepy.validation.constraints;
+package io.github.hiwepy.validation.constraints;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
