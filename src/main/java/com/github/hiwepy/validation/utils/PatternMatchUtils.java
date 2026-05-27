@@ -1,4 +1,4 @@
-package com.github.hiwepy.validation.utils;
+package io.github.hiwepy.validation.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
