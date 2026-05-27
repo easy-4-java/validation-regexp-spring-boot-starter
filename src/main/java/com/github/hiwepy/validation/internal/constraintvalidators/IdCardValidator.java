@@ -13,14 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.github.hiwepy.validation.internal.constraintvalidators;
+package io.github.hiwepy.validation.internal.constraintvalidators;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import com.github.hiwepy.validation.constraints.IdCard;
-import com.github.hiwepy.validation.utils.IDCardUtils;
-import com.github.hiwepy.validation.utils.IdcardUtils2;
+import io.github.hiwepy.validation.constraints.IdCard;
+import io.github.hiwepy.validation.utils.IDCardUtils;
+import io.github.hiwepy.validation.utils.IdcardUtils2;
 
 public class IdCardValidator implements ConstraintValidator<IdCard, String> {
 
