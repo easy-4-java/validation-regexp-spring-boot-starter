@@ -35,6 +35,6 @@ public @interface IdCard {
 	/**
 	 * @return the error message template
 	 */
-	String message() default "{javax.validation.constraints.Pattern.message}";
+	String message() default "{jakarta.validation.constraints.Pattern.message}";
 	
 }
